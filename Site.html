@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B.Tech Engineering Specializations guide by Karthik Reddy">
+    <meta name="theme-color" content="#2563eb">
+    <meta property="og:title" content="Karthik Reddy | Engineering Guide">
+    <meta property="og:description" content="Explore B.Tech specializations in CSE, ECE, Mechanical, and Civil Engineering">
+    
     <title>Karthik Reddy | Engineering Guide</title>
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --primary: #2563eb;
@@ -13,11 +19,17 @@
             --bg: #f8fafc;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
             background-color: var(--bg);
             color: var(--dark);
+            line-height: 1.6;
         }
 
         header {
@@ -30,19 +42,20 @@
 
         header h1 {
             font-size: 3rem;
-            margin: 0;
+            margin: 0 0 0.5rem;
             letter-spacing: 2px;
         }
 
         header p {
             font-weight: 300;
             opacity: 0.9;
+            margin: 0;
         }
 
         .container {
             max-width: 1200px;
-            margin: -50px auto 40px;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 40px 20px 20px;
         }
 
         .course-grid {
@@ -57,7 +70,7 @@
             padding: 30px;
             border-radius: 15px;
             border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -91,9 +104,15 @@
         }
 
         h2 {
-            margin-top: 0;
+            margin: 0 0 10px;
             font-size: 1.5rem;
             color: #0f172a;
+        }
+
+        .demand-status {
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin: 8px 0 15px;
         }
 
         .sub-categories {
@@ -110,6 +129,10 @@
             align-items: center;
         }
 
+        .sub-categories li:last-child {
+            border-bottom: none;
+        }
+
         .sub-categories li::before {
             content: '→';
             margin-right: 10px;
@@ -119,14 +142,27 @@
 
         footer {
             text-align: center;
-            padding: 3rem;
+            padding: 3rem 1rem;
             background: #f1f5f9;
             margin-top: 50px;
             font-size: 0.9rem;
+            color: #64748b;
         }
 
-        /* Status Badge for Realistic Touch */
-        .demand-high { color: #059669; font-weight: 600; font-size: 0.8rem; }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -134,16 +170,16 @@
     <header>
         <h1>Karthik Reddy</h1>
         <p>B.Tech Engineering Specializations</p>
-    </header> into
+    </header>
 
     <div class="container">
         <div class="course-grid">
             
-            <!-- Tech Card -->
+            <!-- Computer Science Card -->
             <div class="course-card">
                 <span class="tag">Most Popular</span>
                 <h2>Computer Science (CSE)</h2>
-                <p class="demand-high">● High Market Demand</p>
+                <p class="demand-status" style="color: #059669;">● High Market Demand</p>
                 <p>The core of digital transformation, focusing on software architecture and problem-solving.</p>
                 <ul class="sub-categories">
                     <li>AI & Machine Learning</li>
@@ -153,11 +189,11 @@
                 </ul>
             </div>
 
-            <!-- ECE Card -->
+            <!-- Electronics Card -->
             <div class="course-card">
                 <span class="tag">Hardware & Software</span>
                 <h2>Electronics (ECE)</h2>
-                <p class="demand-high" style="color: #6366f1;">● Tech-Hybrid Growth</p>
+                <p class="demand-status" style="color: #6366f1;">● Tech-Hybrid Growth</p>
                 <p>Focuses on communication systems, 5G technology, and semiconductor design.</p>
                 <ul class="sub-categories">
                     <li>Internet of Things (IoT)</li>
@@ -171,7 +207,7 @@
             <div class="course-card">
                 <span class="tag">Evergreen</span>
                 <h2>Mechanical Engineering</h2>
-                <p class="demand-high" style="color: #ea580c;">● Industry 4.0 Ready</p>
+                <p class="demand-status" style="color: #ea580c;">● Industry 4.0 Ready</p>
                 <p>Evolving from traditional gears to smart manufacturing and electric mobility.</p>
                 <ul class="sub-categories">
                     <li>Electric Vehicle Technology</li>
@@ -185,7 +221,7 @@
             <div class="course-card">
                 <span class="tag">Infrastructure</span>
                 <h2>Civil Engineering</h2>
-                <p class="demand-high" style="color: #2563eb;">● Urban Expansion</p>
+                <p class="demand-status" style="color: #2563eb;">● Urban Expansion</p>
                 <p>Planning and constructing the backbone of smart cities and global infrastructure.</p>
                 <ul class="sub-categories">
                     <li>Structural Engineering</li>
@@ -199,7 +235,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Karthik reddy|future of Engineering Excellence</p>
+        <p>&copy; 2026 Karthik Reddy | Future of Engineering Excellence</p>
     </footer>
 
 </body>
